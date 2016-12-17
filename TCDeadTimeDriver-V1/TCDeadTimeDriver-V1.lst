@@ -1,0 +1,68 @@
+eeschema (2013-jul-07)-stable  >> Creation date: Thu 15 Dec 2016 10:12:53 PM CST
+#Cmp ( order = Reference )
+| C1         220pF       
+| C2         220pF       
+| C3         22pF        
+| C4         0.001uF (Mica)
+| C5         0.1uF       
+| C6         0.1uF       
+| C7         0.01uF      
+| C8         10uF        
+| C9         10uF        
+| C10        0.01uF      
+| C11        0.01uF      
+| D1         1N4148      
+| D2         1N4148      
+| P1         CONN_4      
+| P2         CONN_3      
+| P3         TST         
+| P4         TST         
+| P5         TST         
+| P6         TST         
+| P7         TST         
+| P8         TST         
+| R1         470         
+| R2         470         
+| R3         20K         
+| R4         1K          
+| R5         2K          
+| R6         1K          
+| R7         100         
+| U1         74LS123     
+| U2         SG3525      
+#End Cmp
+
+#Cmp ( order = Value )
+| 22pF         C3        
+| 220pF        C1        
+| 220pF        C2        
+| 0.001uF (Mica) C4        
+| 0.01uF       C7        
+| 0.01uF       C10       
+| 0.01uF       C11       
+| 0.1uF        C5        
+| 0.1uF        C6        
+| 10uF         C8        
+| 10uF         C9        
+| 1N4148       D1        
+| 1N4148       D2        
+| CONN_4       P1        
+| CONN_3       P2        
+| TST          P3        
+| TST          P4        
+| TST          P5        
+| TST          P6        
+| TST          P7        
+| TST          P8        
+| 100          R7        
+| 470          R1        
+| 470          R2        
+| 1K           R4        
+| 1K           R6        
+| 2K           R5        
+| 20K          R3        
+| SG3525       U2        
+| 74LS123      U1        
+#End Cmp
+
+#End List
