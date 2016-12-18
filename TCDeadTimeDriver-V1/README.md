@@ -124,17 +124,16 @@ One solution is to change the potentiometer R5 from 2K to 5K.  That should give 
 
 Here's a little chart showing common fixed-resistor values for R6 with the original 2K adjustment potentiometer R5:
 
- |        | | | Zero Dead |         | | | Max Dead |         | | | Working Range |         | | | Effective Range |         |
- | Rfixed | | | FreqMin   | FreqMax | | | FreqMin  | FreqMax | | | FreqMin       | FreqMax | | | FreqMin         | FreqMax |
- |--------|-|-|-----------|---------|-|-|----------|---------|-|-|---------------|---------|-|-|-----------------|-------- |
- | 2700   | | | 151976    | 264550  | | | 139276   | 228311  | | | 151976        | 228311  | | | 151976          | 205479  |
- | 2400   | | | 162338    | 297619  | | | 147929   | 252525  | | | 162338        | 252525  | | | 162338          | 227273  |
- | 2200   | | | 170068    | 324675  | | | 154321   | 271739  | | | 170068        | 271739  | | | 170068          | 244565  |
- | 2000   | | | 178571    | 357143  | | | 161290   | 294118  | | | 178571        | 294118  | | | 178571          | 264706  |
- | 1800   | | | 187970    | 396825  | | | 168919   | 320513  | | | 187970        | 320513  | | | 187970          | 288462  |
- | 1500   | | | 204082    | 476190  | | | 181818   | 370370  | | | 204082        | 370370  | | | 204082          | 333333  |
- | 1200   | | | 223214    | 595238  | | | 196850   | 438596  | | | 223214        | 438596  | | | 223214          | 394737  |
- | 1000   | | | 238095    | 714286  | | | 208333   | 500000  | | | 238095        | 500000  | | | 238095          | 450000  |
+<table><tr><td></td><td>|</td><td>Zero Dead</td><td></td><td>|</td><td>Max Dead</td><td></td><td>|</td><td>Working Range</td><td></td><td>|</td><td>Effective Range</td><td></td></tr>
+<tr><td>Rfixed</td><td>|</td><td>FreqMin</td><td>FreqMax</td><td>|</td><td>FreqMin</td><td>FreqMax</td><td>|</td><td>FreqMin</td><td>FreqMax</td><td>|</td><td>FreqMin</td><td>FreqMax</td></tr>
+<tr><td>2700</td><td>|</td><td>151976</td><td>264550</td><td>|</td><td>139276</td><td>228311</td><td>|</td><td>151976</td><td>228311</td><td>|</td><td>151976</td><td>205479</td></tr>
+<tr><td>2400</td><td>|</td><td>162338</td><td>297619</td><td>|</td><td>147929</td><td>252525</td><td>|</td><td>162338</td><td>252525</td><td>|</td><td>162338</td><td>227273</td></tr>
+<tr><td>2200</td><td>|</td><td>170068</td><td>324675</td><td>|</td><td>154321</td><td>271739</td><td>|</td><td>170068</td><td>271739</td><td>|</td><td>170068</td><td>244565</td></tr>
+<tr><td>2000</td><td>|</td><td>178571</td><td>357143</td><td>|</td><td>161290</td><td>294118</td><td>|</td><td>178571</td><td>294118</td><td>|</td><td>178571</td><td>264706</td></tr>
+<tr><td>1800</td><td>|</td><td>187970</td><td>396825</td><td>|</td><td>168919</td><td>320513</td><td>|</td><td>187970</td><td>320513</td><td>|</td><td>187970</td><td>288462</td></tr>
+<tr><td>1500</td><td>|</td><td>204082</td><td>476190</td><td>|</td><td>181818</td><td>370370</td><td>|</td><td>204082</td><td>370370</td><td>|</td><td>204082</td><td>333333</td></tr>
+<tr><td>1200</td><td>|</td><td>223214</td><td>595238</td><td>|</td><td>196850</td><td>438596</td><td>|</td><td>223214</td><td>438596</td><td>|</td><td>223214</td><td>394737</td></tr>
+<tr><td>1000</td><td>|</td><td>238095</td><td>714286</td><td>|</td><td>208333</td><td>500000</td><td>|</td><td>238095</td><td>500000</td><td>|</td><td>238095</td><td>450000</td></tr></table>
 
 I've shown the frequency range for both minimum and maximum dead-time adjustment.  The Working Range column shows the minimum and maximum frequency for the full-span of the dead-time adjustment (that is the maximum minimum-frequency and the minimum maximum-frequency).  And the last column, labeled Effective Range, is the same as the Working Range, but has the maximum frequency scaled down by 10%, as I've found in nearly every situation that the real frequency is about 10% less than that calculated by the SG3525 timing equations.  So that's the column you should use.
 
@@ -155,12 +154,13 @@ After several rounds of working with the coil tuning, I opted to play a song on 
 
 I then replaced the transistors and fuse and swapped the Dead-Time Circuit back in and recalibrated it for the frequency of the coil. And then immediately played "Amazing Grace" again without changing any other settings.
 
-I've made the videos available for you to see so you can compare them and see how the coil behaves with and without the Dead-Time Circuit installed. As I mentioned above, if the circuit is properly calibrated, you'll not notice any performance differences other than your transistors won't die when running long pulse widths and higher powers. So I think this is a good demo of why I designed this circuit in the first place. It's amazing how much it helps just removing that little bit of overlap with a little Dead-Time.
+I've made the videos from those tests available for you to see so you can compare them and see how the coil behaves with and without the Dead-Time Circuit installed. As I mentioned above, if the circuit is properly calibrated, you'll not notice any performance differences other than your transistors won't die when running long pulse widths and higher powers. So I think this is a good demo of why I designed this circuit in the first place. It's amazing how much it helps just removing that little bit of overlap with a little Dead-Time.
 
 Here's the links to the videos:
 
-[Amazing Grace without the Dead Time Circuit](http://cloud.dewtronics.com/videos/oneTesla_201503070003_AmazingGrace_without_DeadTimeCkt_360p.mp4)
-[Amazing Grace with the Dead Time Circuit](http://cloud.dewtronics.com/videos/oneTesla_201503070141_AmazingGrace_with_DeadTimeCkt_360p.mp4)
+- [Amazing Grace without the Dead Time Circuit](http://cloud.dewtronics.com/videos/oneTesla_201503070003_AmazingGrace_without_DeadTimeCkt_360p.mp4)
+
+- [Amazing Grace with the Dead Time Circuit](http://cloud.dewtronics.com/videos/oneTesla_201503070141_AmazingGrace_with_DeadTimeCkt_360p.mp4)
 
 
 ## Setting Sync Pulse Width Adjustment for a Frequency Range
